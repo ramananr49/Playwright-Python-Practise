@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# pytest cache
+.pytest_cache/
+
+# Playwright browser binaries
+playwright/.local-browsers/
+
+# Playwright test results
+test-results/
+playwright-report/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

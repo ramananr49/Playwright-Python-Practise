@@ -1,0 +1,1 @@
+print("Hello Playwright with Python Project")
