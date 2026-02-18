@@ -24,7 +24,7 @@ playwright/.local-browsers/
 # Playwright test results
 test-results/
 playwright-report/
-
+.html
 # Coverage reports
 htmlcov/
 .coverage
