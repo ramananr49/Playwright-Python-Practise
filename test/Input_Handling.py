@@ -38,6 +38,3 @@ def test_input_handling(playwright: Playwright):
 
     #Confirm text is readonly
     expect(page.locator('#dontwrite')).to_have_attribute("readonly", "")
-
-
-    
