@@ -13,3 +13,9 @@ def test_window_handling(playwright: Playwright):
     expect(content_element).to_contain_text(" My time is precious & your? ")
     page.locator('a[href="/calendar"]').click()
     page.wait_for_load_state("networkidle")
+
+    page.locator("#birthday").fill("1993-09-24")
+
+    expect(page.locator('p[class="label pt-3"]')).to_contain_text('1993-09-24')
+
+    page.screenshot()
