@@ -4,7 +4,7 @@ def test_input_handling(playwright: Playwright):
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    page.goto('https://letcode.in/');
+    page.goto('https://letcode.in/')
     page.locator('[id="testing"][href="/test"]').click()
     titleElement = page.locator('//p[contains(@class, "card-header-title") and normalize-space()="Input"]')
     expect(titleElement).to_be_visible()
@@ -22,7 +22,7 @@ def test_input_handling(playwright: Playwright):
     page.keyboard.press('Tab')
 
     #What is inside the text box
-    acttext = page.locator('#getMe').text_content()
+    acttext = page.locator('#getMe').input_value()
     print(acttext)
     expect(page.locator('#getMe')).to_have_value("ortonikc")
 
