@@ -1,6 +1,5 @@
 from playwright.sync_api import Playwright, expect
 
-
 def test_drop_handling(playwright: Playwright):
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
